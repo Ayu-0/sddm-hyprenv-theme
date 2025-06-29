@@ -25,21 +25,32 @@ sddm libqt6svg6 qt6-virtualkeyboard-plugin libqt6multimedia6 qml6-module-qtquick
 ```
 
 2. Clone this repository
-```sh
-sudo git clone -b master --depth 1 https://github.com/keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme
 ```
-3. Copy fonts to `/usr/share/fonts/`
-```sh
-sudo cp -r /usr/share/sddm/themes/sddm-astronaut-theme/Fonts/* /usr/share/fonts/
+git clone https://github.com/Ayu-0/sddm-hyprenv-theme.git
 ```
-4. Edit `/etc/sddm.conf`
-```sh
-echo "[Theme]
+3. Copy theme to `/usr/share/sddm/themes/`
+```
+sudo cp -r sddm-hyprenv-theme /usr/share/sddm/themes
+```
+4. Copy fonts to `/usr/share/fonts/`
+```
+sudo cp -r /usr/share/sddm/themes/sddm-hyprenv-theme/Fonts/* /usr/share/fonts/
+```
+5. Create a file theme.conf inside /etc/sddm.conf.d, If directory not exits then create it by running
+```
+sudo mkdir -p /etc/sddm.conf.d
+```
+```
+sudo nano /etc/sddm.conf.d/theme.conf
+```
+6. And following contents to theme.conf
+```
+[Theme]
 Current=sddm-hyprenv-theme
 ```
-5. Edit `/etc/sddm.conf.d/virtualkbd.conf`
+8. Edit `/etc/sddm.conf.d/virtualkbd.conf`
 ```sh
-echo "[General]
+[General]
 InputMethod=qtvirtualkeyboard" | sudo tee /etc/sddm.conf.d/virtualkbd.conf
 ```
 
@@ -52,7 +63,7 @@ You can do this by :
 
 You can preview the set theme without logging out by runnning:
 ```sh
-sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sddm-astronaut-theme/
+sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sddm-hyprenv-theme/
 ```
 > Note that depending on the system configuration, the preview may differ slightly from the actual login screen.
 

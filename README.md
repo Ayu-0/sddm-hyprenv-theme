@@ -62,7 +62,7 @@ InputMethod=qtvirtualkeyboard" | sudo tee /etc/sddm.conf.d/virtualkbd.conf
 ```
 sudo cp /usr/share/sddm/themes/sddm-hyprenv-theme/Themes/leaves.conf /usr/share/sddm/themes/sddm-hyprenv-theme/theme.conf
 ```
-* Here leaves.conf is theme name, just changed that, to that you want to with
+* Here leaves.conf is theme name, just changed that to the theme you want to have 
 
 
 ## Previewing a theme

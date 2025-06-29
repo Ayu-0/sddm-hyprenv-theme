@@ -56,7 +56,13 @@ InputMethod=qtvirtualkeyboard" | sudo tee /etc/sddm.conf.d/virtualkbd.conf
 
 ## Selecting a theme
 
-You can do this by :
+* By default `purple-heart` theme is active, there is conf file named theme.conf in sddm-hyprenv-theme folder.
+* So, If you want to change theme, you have to select your theme from /Themes dir & rename it theme.conf and paste it into /sddm-hyprenv-theme folder.
+* Ok tehre is cmd line that will do this, just change theme name, ok
+```
+sudo cp /usr/share/sddm/themes/sddm-hyprenv-theme/Themes/leaves.conf /usr/share/sddm/themes/sddm-hyprenv-theme/theme.conf
+```
+* Here leaves.conf is theme name, just changed that, to that you want to with
 
 
 ## Previewing a theme

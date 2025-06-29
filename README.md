@@ -1,5 +1,8 @@
 # sddm-hyprenv-theme :
-![image](https://github.com/user-attachments/assets/d952c52e-bf3f-46a5-90b7-5273aec67506)
+
+|![image](https://github.com/user-attachments/assets/d952c52e-bf3f-46a5-90b7-5273aec67506)|![image](https://github.com/user-attachments/assets/3e784692-4286-4500-a68f-cfe52eface74)|
+|---|---|
+
 It's written using the latest version of Qt, which is **Qt6**. Its key features include **virtual keyboard support**. This theme also support **animated wallpapers**. You can easily change its appearance by choosing another of the 5 pre-made themes or creating your own.
 
 > [!NOTE]

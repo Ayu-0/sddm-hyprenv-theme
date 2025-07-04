@@ -54,7 +54,7 @@ Current=sddm-hyprenv-theme
 8. Edit `/etc/sddm.conf.d/virtualkbd.conf`
 ```sh
 [General]
-InputMethod=qtvirtualkeyboard" | sudo tee /etc/sddm.conf.d/virtualkbd.conf
+InputMethod=qtvirtualkeyboard"
 ```
 
 ## Selecting a theme

@@ -9,18 +9,18 @@ It's written using the latest version of Qt, which is **Qt6**. This theme also s
 > All themes were created for 1080p. However, they should work well in other resolutions.
 
 
-## Installation :
 
-### Manual Installation
+## Installation :
 
 1. Install **dependencies**
 
-[`sddm >= 0.21.0`](https://github.com/sddm/sddm), [`qt6 >= 6.8`](https://doc.qt.io/qt-6/index.html), [`qt6-svg >= 6.8`](https://doc.qt.io/qt-6/qtsvg-index.html), [`qt6-virtualkeyboard >= 6.8`](https://doc.qt.io/qt-6/qtvirtualkeyboard-index.html), [`qt6-multimedia >= 6.8`](https://doc.qt.io/qt-6/qtmultimedia-index.html)
+**Arch Linux** - 
+```
+sudo pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg qt6-quickeffectmaker
+```
 
-You may also want to install additional video codecs like h.264.
-
+**Others Linux Distros** -
 ```sh
-sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg     # Arch
 sddm qt6-svg qt6-virtualkeyboard qt6-multimedia            # Void
 sddm qt6-qtsvg qt6-qtvirtualkeyboard qt6-qtmultimedia      # Fedora
 sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-virtualkeyboard-imports qt6-multimedia qt6-multimedia-imports        # OpenSUSE

@@ -39,9 +39,9 @@ sudo cp -r sddm-hyprenv-theme /usr/share/sddm/themes
 ```
 sudo cp -r /usr/share/sddm/themes/sddm-hyprenv-theme/Fonts/* /usr/share/fonts/ && sudo fc-cache -fv
 ```
-5. Create a file `theme.conf` inside `/etc/sddm.conf.d`, If directory not exits then create it by running
+5. Create a file `theme.conf` inside `/etc/sddm.conf.d` dir, If directory not exits then create it by running
 ```
-sudo mkdir -p /etc/sddm.conf.d
+[ -d /etc/sddm.conf.d ] || sudo mkdir -p /etc/sddm.conf.d
 ```
 ```
 sudo nano /etc/sddm.conf.d/theme.conf
@@ -52,6 +52,9 @@ sudo nano /etc/sddm.conf.d/theme.conf
 Current=sddm-hyprenv-theme
 ```
 7. Create `virtualkbd.conf` file to `/etc/sddm.conf.d/` & add following contents
+```
+sudo nano /etc/sddm.conf.d/virtualkbd.conf
+```
 ```sh
 [General]
 InputMethod=qtvirtualkeyboard

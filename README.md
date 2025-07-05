@@ -27,7 +27,7 @@ sddm-qt6 libQt6Svg6 qt6-virtualkeyboard qt6-virtualkeyboard-imports qt6-multimed
 sddm libqt6svg6 qt6-virtualkeyboard-plugin libqt6multimedia6 qml6-module-qtquick-controls qml6-module-qtquick-effects # Debian Unstable
 ```
 
-2. Clone this repository
+2. Clone repository
 ```
 git clone https://github.com/Ayu-0/sddm-hyprenv-theme.git
 ```
@@ -37,21 +37,21 @@ sudo cp -r sddm-hyprenv-theme /usr/share/sddm/themes
 ```
 4. Copy fonts to `/usr/share/fonts/`
 ```
-sudo cp -r /usr/share/sddm/themes/sddm-hyprenv-theme/Fonts/* /usr/share/fonts/
+sudo cp -r /usr/share/sddm/themes/sddm-hyprenv-theme/Fonts/* /usr/share/fonts/ && sudo fc-cache -fv
 ```
-5. Create a file theme.conf inside /etc/sddm.conf.d, If directory not exits then create it by running
+5. Create a file `theme.conf` inside `/etc/sddm.conf.d`, If directory not exits then create it by running
 ```
 sudo mkdir -p /etc/sddm.conf.d
 ```
 ```
 sudo nano /etc/sddm.conf.d/theme.conf
 ```
-6. And following contents to theme.conf
+6. Add the following contents to theme.conf
 ```
 [Theme]
 Current=sddm-hyprenv-theme
 ```
-8. Edit `/etc/sddm.conf.d/virtualkbd.conf`
+8. Create `virtualkbd.conf` file to `/etc/sddm.conf.d/` & add following contents
 ```sh
 [General]
 InputMethod=qtvirtualkeyboard"
@@ -59,9 +59,9 @@ InputMethod=qtvirtualkeyboard"
 
 ## Selecting a theme
 
-* By default `purple-heart` theme is active, there is conf file named `theme.conf` in sddm-hyprenv-theme folder.
-* So, If you want to change the theme, you have to select your theme from `Themes` folder & rename it theme.conf and paste it into `sddm-hyprenv-theme folder`.
-* Ok there is cmd line that will do this, just change the theme name, ok
+* By default `purple-heart` theme is active, active theme is managed by conf file `theme.conf` in sddm-hyprenv-theme folder.
+* So, If you want to change the theme, all you have to do is select your theme from `Themes` dir in `sddm-hyprenv-theme`dir & rename it `theme.conf` and paste it into `sddm-hyprenv-theme folder`. or you can directly copy theme contents to `theme.conf` file.
+* Don't worry you don't have to do all this, there is cmd line that will do this, just change `theme name`. Like if you wanna use leaves theme, just run this cmd
 ```
 sudo cp /usr/share/sddm/themes/sddm-hyprenv-theme/Themes/leaves.conf /usr/share/sddm/themes/sddm-hyprenv-theme/theme.conf
 ```

@@ -68,12 +68,12 @@ InputMethod=qtvirtualkeyboard"
 ```
 sudo cp /usr/share/sddm/themes/sddm-hyprenv-theme/Themes/leaves.conf /usr/share/sddm/themes/sddm-hyprenv-theme/theme.conf
 ```
-* Available Themes :
-- [ ] purple-heart
-- [ ] outer-wilds
-- [ ] leaves
-- [ ] the-view
-- [ ] forest
+**Available Themes** :
+-  purple-heart
+-  outer-wilds
+-  leaves
+-  the-view
+-  forest
 
 ## Previewing a theme
 

@@ -81,6 +81,3 @@ sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sddm-hyprenv-theme/
 ```
 > Note that depending on the system configuration, the preview may differ slightly from the actual login screen.
 
-
-Distributed under the **[GPLv3+](https://www.gnu.org/licenses/gpl-3.0.html) License**.    
-Copyright (C) 2022-2025 Keyitdev.

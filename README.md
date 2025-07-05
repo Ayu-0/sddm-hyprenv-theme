@@ -59,14 +59,16 @@ InputMethod=qtvirtualkeyboard"
 
 ## Selecting a theme
 
-* By default `purple-heart` theme is active, active theme is managed by conf file `theme.conf` in sddm-hyprenv-theme folder.
-* So, If you want to change the theme, all you have to do is select your theme from `Themes` dir in `sddm-hyprenv-theme`dir & rename it `theme.conf` and paste it into `sddm-hyprenv-theme folder`. or you can directly copy theme contents to `theme.conf` file.
-* Don't worry you don't have to do all this, there is cmd line that will do this, just change `theme name`. Like if you wanna use leaves theme, just run this cmd
+* By default `purple-heart` theme is active, active theme is managed by a file named `theme.conf` inside the `sddm-hyprenv-theme` directory
+* So, If you want to change the theme, all you have to do is :
+  - Go to the `Themes/` directory inside the `sddm-hyprenv-theme` folder.
+  - Pick your desired theme file (e.g., `leaves.conf`)
+  - Rename it to `theme.conf` and move or copy it to the `sddm-hyprenv-theme` folder.
+* You don't have to do it manually — just run the following command and replace `leaves` with your `theme name`:
 ```
 sudo cp /usr/share/sddm/themes/sddm-hyprenv-theme/Themes/leaves.conf /usr/share/sddm/themes/sddm-hyprenv-theme/theme.conf
 ```
-* Here `leaves.conf` is theme name, just changed that to the theme you want to have
-* Name of the all the themes :
+* Available Themes :
 - [ ] purple-heart
 - [ ] outer-wilds
 - [ ] leaves
